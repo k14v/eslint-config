@@ -1,0 +1,47 @@
+{
+  "name": "eslint-config-k14v",
+  "version": "1.0.0",
+  "description": "Eslint config used across @k14v projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "keywords": [
+    "eslint",
+    "k14v",
+    "linter",
+    "rules",
+    "eslintconfig",
+    "styleguide"
+  ],
+  "author": {
+    "name": "k14v",
+    "url": "https://github.com/k14v"
+  },
+  "contributors": [
+    {
+      "name": "Rubeniskov",
+      "email": "me@rubeniskov.com",
+      "url": "https://rubeniskov.com"
+    },
+    {
+      "name": "Kelvur",
+      "url": "https://github.com/Kelvur"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0"
+  }
+}
