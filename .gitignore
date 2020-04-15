@@ -1,2 +1,22 @@
 node_modules/
 package-lock.json
+# Runtime data
+pids
+*.pid
+*.seed
+__MACOSX
+.fuse_hidden*
+.project
+.settings
+.classpath
+.sass-cache/
+# OS generated files #
+######################
+*/.DS_Store
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
