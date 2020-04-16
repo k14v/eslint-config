@@ -2,11 +2,17 @@ module.exports = {
   'env': {
     'browser': true,
     'commonjs': true,
-    'es6': true,
+    'es2017': true,
     'node': true,
   },
+  'parser': 'babel-eslint',
   'parserOptions': {
     'sourceType': 'module',
+    'ecmaVersion': 8,
+    'ecmaFeatures': {
+      'globalReturn': true,
+      'experimentalObjectRestSpread': true,
+    },
   },
   'plugins': [
     'import',
@@ -73,12 +79,14 @@ module.exports = {
     'comma-spacing': [ 'error', { 'before': false, 'after': true } ],
     'eol-last': [ 'error', 'always' ],
     'indent': [ 'error', 2 ],
+    'keyword-spacing': 'error',
     'linebreak-style': [ 'error', 'unix' ],
     'no-mixed-spaces-and-tabs': 'error',
     'no-multi-assign': 'error',
     'no-trailing-spaces': 'error',
     'no-unneeded-ternary': 'error',
     'quotes': [ 'error', 'single' ],
+    'semi': 'error',
     'semi-spacing': 'error',
     'semi-style': 'error',
     'spaced-comment': [ 'error', 'always', { 'exceptions': ['-+'] } ],
@@ -96,4 +104,4 @@ module.exports = {
     // Plugin - Import
     'import/newline-after-import': [ 'error', { 'count': 2 } ],
   },
-}
+};
