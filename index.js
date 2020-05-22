@@ -79,6 +79,7 @@ module.exports = {
     'comma-spacing': [ 'error', { 'before': false, 'after': true } ],
     'eol-last': [ 'error', 'always' ],
     'indent': [ 'error', 2 ],
+    'key-spacing': 'error',
     'keyword-spacing': 'error',
     'linebreak-style': [ 'error', 'unix' ],
     'no-mixed-spaces-and-tabs': 'error',
@@ -89,6 +90,7 @@ module.exports = {
     'semi': 'error',
     'semi-spacing': 'error',
     'semi-style': 'error',
+    'space-infix-ops': 'error',
     'spaced-comment': [ 'error', 'always', { 'exceptions': ['-+'] } ],
     'switch-colon-spacing': [ 'error', { 'after': true, 'before': false } ],
     // ES6
