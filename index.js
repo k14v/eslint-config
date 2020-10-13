@@ -72,7 +72,7 @@ module.exports = {
     'no-undef': 'error',
     'no-unused-vars': 'error',
     // Style
-    'array-bracket-spacing': [ 'error', 'always', { 'singleValue': false } ],
+    'array-bracket-spacing': [ 'error', 'always', { 'singleValue': false, 'objectsInArrays': false } ],
     'block-spacing': 'error',
     'brace-style': [ 'error', '1tbs', { 'allowSingleLine': true } ],
     'comma-dangle': [ 'error', 'always-multiline' ],
