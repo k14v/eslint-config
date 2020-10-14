@@ -22,16 +22,8 @@ This package don't have any package as dependency, all it have is `peerDependenc
 
 #### Install all `peerDependencies`
 
-NPM:
-
 ```shell
-npm install --save-dev eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
-```
-
-Yarn:
-
-```shell
-yarn eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks --dev
+npx install-peerdeps eslint-config-k14v --dev
 ```
 
 #### Install `peerDependencies` just for javascript
@@ -39,13 +31,13 @@ yarn eslint eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react esli
 NPM:
 
 ```shell
-npm install --save-dev eslint eslint-plugin-import
+npm install --save-dev eslint eslint-plugin-import babel-eslint
 ```
 
 Yarn:
 
 ```shell
-yarn eslint eslint-plugin-import --dev
+yarn eslint eslint-plugin-import babel-eslint --dev
 ```
 
 # Usage
@@ -59,7 +51,7 @@ Open your `.eslintrc` configuration file and add the following:
 If you want the React rules, use:
 
 ```javascript
-  "extends": [ "eslint-config-k14v/react" ]
+  "extends": [ "eslint-config-k14v/lib/react" ]
 ```
 
 React rules extends the base rules. So, you will have both.

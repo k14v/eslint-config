@@ -2,11 +2,17 @@ module.exports = {
   'env': {
     'browser': true,
     'commonjs': true,
-    'es6': true,
+    'es2017': true,
     'node': true,
   },
+  'parser': 'babel-eslint',
   'parserOptions': {
     'sourceType': 'module',
+    'ecmaVersion': 8,
+    'ecmaFeatures': {
+      'globalReturn': true,
+      'experimentalObjectRestSpread': true,
+    },
   },
   'plugins': [
     'import',
@@ -66,21 +72,25 @@ module.exports = {
     'no-undef': 'error',
     'no-unused-vars': 'error',
     // Style
-    'array-bracket-spacing': [ 'error', 'always', { 'singleValue': false } ],
+    'array-bracket-spacing': [ 'error', 'always', { 'singleValue': false, 'objectsInArrays': false } ],
     'block-spacing': 'error',
     'brace-style': [ 'error', '1tbs', { 'allowSingleLine': true } ],
     'comma-dangle': [ 'error', 'always-multiline' ],
     'comma-spacing': [ 'error', { 'before': false, 'after': true } ],
     'eol-last': [ 'error', 'always' ],
     'indent': [ 'error', 2 ],
+    'key-spacing': 'error',
+    'keyword-spacing': 'error',
     'linebreak-style': [ 'error', 'unix' ],
     'no-mixed-spaces-and-tabs': 'error',
     'no-multi-assign': 'error',
     'no-trailing-spaces': 'error',
     'no-unneeded-ternary': 'error',
     'quotes': [ 'error', 'single' ],
+    'semi': 'error',
     'semi-spacing': 'error',
     'semi-style': 'error',
+    'space-infix-ops': 'error',
     'spaced-comment': [ 'error', 'always', { 'exceptions': ['-+'] } ],
     'switch-colon-spacing': [ 'error', { 'after': true, 'before': false } ],
     // ES6
@@ -96,4 +106,4 @@ module.exports = {
     // Plugin - Import
     'import/newline-after-import': [ 'error', { 'count': 2 } ],
   },
-}
+};
